@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,7 +35,7 @@
       --pub-desc:   #7a8480;
       --pub-impact: #4a7a5a;
       --hero-p:     #a8b0aa;
-      --font-mono:  'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
+      --font-mono:  'IBM Plex Mono', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
       --font-serif: 'Newsreader', Georgia, serif;
       --max-w: 800px;
       --radius: 4px;
@@ -70,9 +70,10 @@
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: var(--font-mono);
-      font-size: 14px;
-      line-height: 1.6;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       transition: background 0.3s ease, color 0.3s ease;
     }
@@ -116,7 +117,7 @@
     }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
     .nav-links { list-style: none; display: flex; gap: 24px; }
-    .nav-links a { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; transition: color 0.15s; }
+    .nav-links a { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; transition: color 0.15s; }
     .nav-links a:hover { color: var(--ink); text-decoration: none; }
 
     /* ── Theme toggle ── */
@@ -154,15 +155,17 @@
     /* ── Hero ── */
     .hero { display: grid; grid-template-columns: 1fr 160px; gap: 40px; align-items: start; margin-bottom: 68px; }
     .hero-text h1 {
-      font-family: var(--font-serif); font-size: 2.2rem; font-weight: 600;
+      font-family: 'DM Sans', sans-serif; font-size: 2.2rem; font-weight: 600;
       line-height: 1.15; color: var(--ink); margin-bottom: 6px; letter-spacing: -0.02em;
     }
     .hero-subtitle {
-      font-size: 0.72rem; color: var(--accent); letter-spacing: 0.1em;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px; color: #0d0d0d;
+      letter-spacing: 0.05em; font-weight: 500;
       margin-bottom: 22px;
     }
     .hero-subtitle::before { content: ''; color: var(--dim); }
-    .hero-text p { color: var(--hero-p); max-width: 500px; margin-bottom: 12px; font-size: 0.88rem; line-height: 1.8; font-weight: 300; }
+    .hero-text p { color: var(--hero-p); max-width: 500px; margin-bottom: 12px; font-size: 0.85rem; line-height: 1.8; font-weight: 300; }
     .hero-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
     .hero-links a {
       display: inline-flex; align-items: center; gap: 6px;
@@ -176,7 +179,7 @@
 
     /* photo */
     .photo-placeholder {
-      width: 148px; height: 148px; border-radius: var(--radius);
+      width: 168px; height: 198px; border-radius: var(--radius);
       background: var(--surface2); border: 1px dashed var(--border2);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       color: var(--dim); font-size: 0.67rem; text-align: center; gap: 8px; letter-spacing: 0.04em;
@@ -293,17 +296,9 @@
         <p class="hero-subtitle">Software Engineer · Data, ML &amp; AI Engineering · Lagos, NG</p>
 
         <p>
-          I build the infrastructure that financial systems and intelligent applications
-          run on. With 5+ years across Nigeria's most critical payment institutions:
-          Moniepoint, NIBSS, and Palmpay, I've engineered high-throughput APIs,
-          real-time fraud detection pipelines, and national-scale interbank systems
-          processing over 100 million transactions monthly.
+          I build scalable backend systems for financial infrastructure and intelligent applications. With 5+ years across Moniepoint, NIBSS, and PalmPay, I’ve engineered resilient APIs, real-time fraud detection pipelines, and high-volume interbank payment services processing over 100 million transactions monthly.
         </p>
-        <p>
-          My focus is shifting toward the intersection of backend systems engineering
-          and ML/AI infrastructure: building the scalable, observable foundations that
-          data-intensive applications need to work in production. Currently deepening
-          that with an MSc in Computer Science (conc. Data Science) at LAUTECH.
+        <p>My focus is shifting toward ML engineering and applied AI - building intelligent systems and production-ready ML models backed by scalable backend infrastructure. I’m currently towing that path through an MSc in Computer Science (Data Science concentration) at Ladoke Akintola University of Technology.
         </p>
 
         <div class="hero-links">
@@ -343,7 +338,7 @@
 
         <div class="exp-item">
           <div class="exp-header">
-            <h3>Senior Software Engineer</h3>
+            <h3>Software Engineer, Account Payments</h3>
             <span class="exp-date">Oct 2025 – Present</span>
           </div>
           <div class="exp-meta">Moniepoint Group — London Area, United Kingdom</div>
@@ -358,7 +353,7 @@
 
         <div class="exp-item">
           <div class="exp-header">
-            <h3>Software Analyst</h3>
+            <h3>Software Analyst, Core Switching</h3>
             <span class="exp-date">Feb 2025 – Oct 2025</span>
           </div>
           <div class="exp-meta">NIBSS (Nigeria Interbank Settlement Systems) — Lagos, Nigeria</div>
@@ -373,7 +368,7 @@
 
         <div class="exp-item">
           <div class="exp-header">
-            <h3>Java Software Engineer</h3>
+            <h3>Java Software Engineer, Core Banking</h3>
             <span class="exp-date">Mar 2024 – Feb 2025</span>
           </div>
           <div class="exp-meta">Zenith Bank — Lagos, Nigeria</div>
@@ -388,7 +383,7 @@
 
         <div class="exp-item">
           <div class="exp-header">
-            <h3>Software Engineer</h3>
+            <h3>Software Engineer, Integrations</h3>
             <span class="exp-date">Apr 2022 – Mar 2024</span>
           </div>
           <div class="exp-meta">Palmpay Limited — Lagos, Nigeria</div>
@@ -436,7 +431,7 @@
 
       <div class="news-item">
         <span class="news-date">2025</span>
-        <div class="news-body">National Payment Stack went live — <strong>real-time ISO 20022 processing</strong> across 50+ financial institutions, handling 100M+ monthly transactions. <span class="badge badge-amber">Launch</span></div>
+        <div class="news-body">National Payment Stack Portals went live — <strong>real-time ISO 20022 processing</strong> for message types [acmt.023, acmt.024, pacs.002, pacs.008, pacs.028]. <span class="badge badge-amber">Launch</span></div>
       </div>
 
        <div class="news-item">
@@ -552,9 +547,7 @@
           <div class="edu-date">Aug 2016 – Feb 2020</div>
         </div>
       </div>
-    </section>
-
-  </main>
+    </section>  </main>
 
   <footer>
     Timi Olowookere · Lagos, Nigeria ·
