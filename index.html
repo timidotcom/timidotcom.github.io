@@ -43,9 +43,9 @@
 
     /* ── Light mode ── */
     html.light {
-      --bg:         #f7f6f2;
-      --surface:    #eeecea;
-      --surface2:   #e5e3df;
+      --bg:         #ffffff;
+      --surface:    #ffffff;
+      --surface2:   #f8f8f8;
       --border:     #d4d1cb;
       --border2:    #c4c0b8;
       --ink:        #18201a;
@@ -57,7 +57,7 @@
       --red:        #b94040;
       --amber:      #a07020;
       --blue:       #2a5fa0;
-      --nav-bg:     rgba(247,246,242,0.94);
+      --nav-bg:     rgba(255,255,255,0.94);
       --news-body:  #4a524d;
       --exp-body:   #4a524d;
       --pub-desc:   #525855;
@@ -89,6 +89,10 @@
       background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.04) 2px, rgba(0,0,0,0.04) 4px);
       pointer-events: none;
       z-index: 9999;
+    }
+
+    html.light body::before {
+      background: none;
     }
 
     /* ── Nav ── */
@@ -267,8 +271,8 @@
     <div class="nav-inner">
       <span class="nav-name">timiolowookere<span class="cursor"></span></span>
       <ul class="nav-links">
-        <li><a href="#news">news</a></li>
         <li><a href="#experience">experience</a></li>
+        <li><a href="#news">news</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
         <li><a href="mailto:contacttimiolowookere@gmail.com">contact</a></li>
@@ -331,34 +335,8 @@
             style="width:148px;height:148px;border-radius:4px;object-fit:cover;" />
     </div>
 
-    <!-- News -->
-    <section id="news" class="fade-in" style="animation-delay:0.12s">
-      <h2>News</h2>
-
-      <div class="news-item">
-        <span class="news-date">Oct 2025</span>
-        <div class="news-body">Enrolled in <strong>MSc Computer Science</strong> at Ladoke Akintola University of Technology (LAUTECH). <span class="badge badge-blue">Academic</span></div>
-      </div>
-      <div class="news-item">
-        <span class="news-date">Feb 2025</span>
-        <div class="news-body">Joined <strong>NIBSS</strong> as Senior Software Engineer — leading backend development for Nigeria's National Payment Stack. <span class="badge badge-green">New Role</span></div>
-      </div>
-      <div class="news-item">
-        <span class="news-date">2025</span>
-        <div class="news-body">National Payment Stack went live — <strong>real-time ISO 20022 processing</strong> across 50+ financial institutions, handling 100M+ monthly transactions. <span class="badge badge-amber">Launch</span></div>
-      </div>
-      <div class="news-item">
-        <span class="news-date">Mar 2024</span>
-        <div class="news-body">Joined <strong>Zenith Bank</strong> as Java Software Engineer; integrated core banking with SAS Fraud Management — reducing fraudulent incidents by 35% at 99.9% uptime.</div>
-      </div>
-      <div class="news-item">
-        <span class="news-date">2023</span>
-        <div class="news-body">Biller Integration Platform at Palmpay surpassed <strong>5M utility transactions/month</strong>, generating $3M+ in monthly commission revenue across Nigeria and Tanzania.</div>
-      </div>
-    </section>
-
     <!-- Experience -->
-    <section id="experience" class="fade-in" style="animation-delay:0.18s">
+    <section id="experience" class="fade-in" style="animation-delay:0.12s">
       <h2>Experience</h2>
       <div class="exp-list">
 
@@ -424,6 +402,32 @@
 
       </div>
       <a class="cv-link" href="#">view full résumé →</a>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="fade-in" style="animation-delay:0.18s">
+      <h2>News</h2>
+
+      <div class="news-item">
+        <span class="news-date">Oct 2025</span>
+        <div class="news-body">Enrolled in <strong>MSc Computer Science</strong> at Ladoke Akintola University of Technology (LAUTECH). <span class="badge badge-blue">Academic</span></div>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Feb 2025</span>
+        <div class="news-body">Joined <strong>NIBSS</strong> as Senior Software Engineer — leading backend development for Nigeria's National Payment Stack. <span class="badge badge-green">New Role</span></div>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025</span>
+        <div class="news-body">National Payment Stack went live — <strong>real-time ISO 20022 processing</strong> across 50+ financial institutions, handling 100M+ monthly transactions. <span class="badge badge-amber">Launch</span></div>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Mar 2024</span>
+        <div class="news-body">Joined <strong>Zenith Bank</strong> as Java Software Engineer; integrated core banking with SAS Fraud Management — reducing fraudulent incidents by 35% at 99.9% uptime.</div>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2023</span>
+        <div class="news-body">Biller Integration Platform at Palmpay surpassed <strong>5M utility transactions/month</strong>, generating $3M+ in monthly commission revenue across Nigeria and Tanzania.</div>
+      </div>
     </section>
 
     <!-- Projects -->
