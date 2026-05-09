@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,7 +36,6 @@
       --pub-impact: #4a7a5a;
       --hero-p:     #a8b0aa;
       --font-mono:  'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
-      --font-sans:  'Inter', sans-serif;
       --font-serif: 'Newsreader', Georgia, serif;
       --max-w: 800px;
       --radius: 4px;
@@ -71,7 +70,7 @@
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: var(--font-sans);
+      font-family: var(--font-mono);
       font-size: 14px;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -108,7 +107,7 @@
       max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
       display: flex; align-items: center; justify-content: space-between; height: 48px;
     }
-    .nav-name { font-family: var(--font-sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; color: var(--accent); }
+    .nav-name { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; color: var(--accent); }
     .nav-name::before { content: '> '; color: var(--dim); }
     .cursor {
       display: inline-block; width: 8px; height: 13px;
@@ -117,7 +116,7 @@
     }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
     .nav-links { list-style: none; display: flex; gap: 24px; }
-    .nav-links a { font-family: var(--font-sans); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; transition: color 0.15s; }
+    .nav-links a { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; transition: color 0.15s; }
     .nav-links a:hover { color: var(--ink); text-decoration: none; }
 
     /* ── Theme toggle ── */
@@ -160,7 +159,7 @@
     }
     .hero-subtitle {
       font-size: 0.72rem; color: var(--accent); letter-spacing: 0.1em;
-      margin-bottom: 22px; text-transform: uppercase;
+      margin-bottom: 22px;
     }
     .hero-subtitle::before { content: ''; color: var(--dim); }
     .hero-text p { color: var(--hero-p); max-width: 500px; margin-bottom: 12px; font-size: 0.88rem; line-height: 1.8; font-weight: 300; }
@@ -186,7 +185,7 @@
 
     /* ── Section headings ── */
     section h2 {
-      font-family: var(--font-sans); font-size: 0.72rem; font-weight: 600;
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent);
       margin-bottom: 24px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
     }
@@ -211,7 +210,7 @@
     .exp-item { border-left: 2px solid var(--border2); padding-left: 20px; transition: border-color 0.2s; }
     .exp-item:hover { border-color: var(--accent); }
     .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; margin-bottom: 3px; }
-    .exp-header h3 { font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; color: var(--ink); letter-spacing: 0.02em; }
+    .exp-header h3 { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600; color: var(--ink); letter-spacing: 0.02em; }
     .exp-date { font-family: var(--font-mono); font-size: 0.7rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
     .exp-meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 10px; letter-spacing: 0.02em; }
     .exp-body { font-size: 0.83rem; color: var(--exp-body); font-weight: 300; }
@@ -291,7 +290,7 @@
     <div class="hero fade-in" id="about" style="animation-delay:0.05s">
       <div class="hero-text">
         <h1>Timi Olowookere</h1>
-        <p class="hero-subtitle">Software Engineer · Data, ML &amp; AI Engineering · Lagos, Nigeria</p>
+        <p class="hero-subtitle">Software Engineer · Data, ML &amp; AI Engineering · Lagos, NG</p>
 
         <p>
           I build the infrastructure that financial systems and intelligent applications
